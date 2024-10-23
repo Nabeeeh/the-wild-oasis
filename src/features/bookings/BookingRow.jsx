@@ -46,7 +46,8 @@ const Amount = styled.div`
   font-weight: 500;
 `;
 
-function BookingRow({ booking }) {
+// eslint-disable-next-line react/prop-types
+function BookingRow({ booking = {} }) {
   const {
     id: bookingId,
 

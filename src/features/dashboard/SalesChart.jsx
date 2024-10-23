@@ -28,7 +28,7 @@ const StyledSalesChart = styled(DashboardBox)`
   }
 `;
 
-
+// eslint-disable-next-line react/prop-types
 const SalesChart = ({ recentBookings, numDays }) => {
   const { isDarkMode } = useDarkMode();
 
@@ -41,9 +41,11 @@ const SalesChart = ({ recentBookings, numDays }) => {
     return {
       label: format(date, "MMM dd"),
       totalSales: recentBookings
+        // eslint-disable-next-line react/prop-types
         ?.filter((booking) => isSameDay(date, new Date(booking.created_at)))
         .reduce((acc, cur) => acc + cur.totalPrice, 0),
       extrasSales: recentBookings
+        // eslint-disable-next-line react/prop-types
         ?.filter((booking) => isSameDay(date, new Date(booking.created_at)))
         .reduce((acc, cur) => acc + cur.extrasPrice, 0),
     };

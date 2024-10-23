@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import styled from "styled-components";
 import { createContext, useContext, useState } from "react";
 import { HiEllipsisVertical } from "react-icons/hi2";

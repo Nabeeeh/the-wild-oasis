@@ -25,7 +25,8 @@ const Guest = styled.div`
   font-weight: 500;
 `;
 
-const TodayItem = ({ activity }) => {
+// eslint-disable-next-line react/prop-types
+const TodayItem = ({ activity={} }) => {
   const { id, numNights, status, guests } = activity;
 
   const navigate = useNavigate();

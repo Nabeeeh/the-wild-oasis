@@ -38,7 +38,8 @@ const Discount = styled.div`
   color: var(--color-green-700);
 `;
 
-const CabinRow = ({ cabin }) => {
+// eslint-disable-next-line react/prop-types
+const CabinRow = ({ cabin={} }) => {
   const {
     id: cabinId,
     name,

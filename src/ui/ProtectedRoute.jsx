@@ -13,6 +13,7 @@ const FullPage = styled.div`
   align-items: center;
 `;
 
+// eslint-disable-next-line react/prop-types
 const ProtectedRoute = ({ children }) => {
   const { isLoading, isAuthenticated, fetchStatus } = useUser();
 

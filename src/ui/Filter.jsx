@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import styled, { css } from "styled-components";
 import { useSearchParams } from "react-router-dom";
 
@@ -47,9 +48,6 @@ const Filter = ({ filterField, options, searchParamsToReset }) => {
       searchParams.set(param.name, param.value)
     );
     setSearchParams(searchParams);
-
-    // searchParams.set(filterField, value);
-    // setSearchParams(searchParams);
   };
 
   return (

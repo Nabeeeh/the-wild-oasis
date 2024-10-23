@@ -4,6 +4,7 @@ import { useLocalStorageState } from "../hooks/useLocalStorageState";
 
 const DarkModeContext = createContext();
 
+// eslint-disable-next-line react/prop-types
 export const DarkModeProvider = ({ children }) => {
   const [isDarkMode, setIsDarkMode] = useLocalStorageState(false, "isDarkMode");
 
@@ -28,6 +29,7 @@ export const DarkModeProvider = ({ children }) => {
   );
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useDarkMode = function () {
   const context = useContext(DarkModeContext);
   if (context === undefined)

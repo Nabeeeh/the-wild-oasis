@@ -31,8 +31,6 @@ function CheckinBooking() {
   const { checkin, isCheckingIn } = useCheckingIn();
   const { settings, isLoading: isLoadingSettings } = useSettings();
 
-  // console.log(isLoadingSettings, settings);
-
   const moveBack = useMoveBack();
 
   useEffect(() => {

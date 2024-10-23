@@ -142,6 +142,7 @@ function prepareData(startData, stays) {
   return data;
 }
 
+// eslint-disable-next-line react/prop-types
 const DurationChart = ({ confirmedStays }) => {
   const { isDarkMode } = useDarkMode();
 

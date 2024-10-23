@@ -61,6 +61,7 @@ const PaginationButton = styled.button`
   }
 `;
 
+// eslint-disable-next-line react/prop-types
 const Pagination = ({ count }) => {
   const [searchParams, setSearchParams] = useSearchParams();
 

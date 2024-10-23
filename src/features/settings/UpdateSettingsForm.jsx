@@ -19,16 +19,11 @@ function UpdateSettingsForm() {
   const { isUpdating, updateSetting } = useUpdateSetting();
 
   const handleUpdate = function (e) {
-    // const { value } = e.target;
-    // console.log(value);
     const { value, id, defaultValue } = e.target;
 
     if (!value || !id || defaultValue === value) return;
     updateSetting({ [id]: value });
     e.target.defaultValue = value;
-
-    // if (!value) return;
-    // updateSetting({ [field]: value });
   };
 
   if (isLoading) return <Spinner />;

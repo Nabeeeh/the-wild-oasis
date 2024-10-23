@@ -10,7 +10,7 @@ import Empty from "../../ui/Empty";
 
 const CabinTable = () => {
   const { cabins, isLoading } = useCabins();
-  // console.log(isLoading, cabins);
+ 
 
   const [searchParams] = useSearchParams();
 
@@ -40,7 +40,7 @@ const CabinTable = () => {
   const sortedCabins = filteredCabins?.sort(
     (a, b) => (a[field] - b[field]) * modifier
   );
-  // console.log(field, direction);
+  
 
   return (
     <Menus>
