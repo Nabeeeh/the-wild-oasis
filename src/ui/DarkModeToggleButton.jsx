@@ -4,7 +4,7 @@ import { useDarkMode } from "../context/DarkModeContext";
 
 import ButtonIcon from "./ButtonIcon";
 
-const DarkModeToggle = () => {
+const DarkModeToggleButton = () => {
   const { isDarkMode, toggleDarkMode } = useDarkMode();
 
   return (
@@ -14,4 +14,4 @@ const DarkModeToggle = () => {
   );
 };
 
-export default DarkModeToggle;
+export default DarkModeToggleButton;
